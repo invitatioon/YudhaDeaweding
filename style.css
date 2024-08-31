@@ -554,10 +554,13 @@ footer li {
     top: 31px;
   }
 
-  .credit-card,
-  .credit-card1 {
-    width: 80vw;
-    max-width: 300px;
-    height: auto;
+  .credit-card {
+    width: 100vw;
+    max-width: 420px;
+    height: 40vw;
   }
+  .credit-card1 {
+    width: 100vw;
+    max-width: 420px;
+    height: 40vw;
 }
