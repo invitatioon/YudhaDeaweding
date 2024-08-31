@@ -556,8 +556,8 @@ footer li {
 
   .credit-card,
   .credit-card1 {
-    width: 50vw;
-    max-width: 450px;
-    height: 50vw;
+    width: 100vw;
+    max-width: 420px;
+    height: 40vw;
   }
 }
