@@ -491,12 +491,6 @@ footer li {
     left: -13px;
     right: auto;
   }
-
-  .credit-card .credit-card1 {
-    justify-content: center;
-    width: 50vw;
-    max-width: 400px;
-  }
 }
 
 /* Tablet devices (max-width: 768px) */
