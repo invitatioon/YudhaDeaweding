@@ -59,6 +59,7 @@ body {
 .hero {
   position: relative;
   min-height: 100vh;
+  height: 20%;
 }
 
 .hero h1 {
