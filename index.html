@@ -26,6 +26,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!--SCROL ANIMATION-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,16 +37,17 @@
 <section id="hero" 
   class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
   <main>
-    <h1>Satria Bagus Yudhistira, S.M.<br>&<br>Fepri Lidya Putri Sinaga, S.E.</h1>
-    <p>Akan Melangsungkan Resepsi Pernikahan Dalam:</p>
-    <div class="simply-countdown"></div>
-    <div class="my-box">
+    <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">Satria Bagus Yudhistira, S.M.<br>&<br>Fepri Lidya Putri Sinaga, S.E.</h1>
+    <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">Akan Melangsungkan Resepsi Pernikahan Dalam Waktu:</p>
+    <div class="simply-countdown" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"></div>
+    <div class="my-box" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
       <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
       <h4><span></span></h4>
-      <a href="#home" class="btn btn-lg mt-5" onClick="enableScroll()">Lihat Undangan</a>
+      <a href="#home" class="btn btn-lg mt-5" onClick="enableScroll()">
+        <i class="bi bi-book-fill"></i> Lihat Undangan
+      </a>
     </div>
   </main>
-    
 </section>
 
 <!-- Navbar -->
@@ -432,6 +436,13 @@
 <!-- btn copy -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js">
+</script>
+
+<!-- SCROL ANIMATION-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+<script>
+  AOS.init();
 </script>
 
 
