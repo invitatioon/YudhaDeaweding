@@ -93,22 +93,22 @@ body {
   color: white;
 }
 
-.mynavbar {
+.navbar-brand {
   background-color: rgb(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(4px);
 }
 
-.mynavbar .offcanvas {
+.navbar-brand .offcanvas {
   height: 100vh;
 }
 
-.mynavbar .navbar-brand,.mynavbar .offcanvas-title {
+.navbar-brand,.mynavbar .offcanvas-title {
   font-family: 'Sacramento';
   font-size: 3.2rem;
   font-weight: bold;
 }
 
-.mynavbar .nav-link {
+.navbar-brand .nav-link {
   text-transform: uppercase;
 }
 
@@ -543,7 +543,7 @@ footer li {
     margin: 5px;
   }
 
-  .mynavbar .nav-link {
+  .offcanvas-body, .offcanvas-title .nav-link {
     font-size: 2rem;
     text-align: center;
   }
