@@ -543,7 +543,7 @@ footer li {
     margin: 5px;
   }
 
-  .offcanvas-body, .offcanvas-title .nav-link {
+  .offcanvas-body, .offcanvas-title {
     font-size: 2rem;
     text-align: center;
   }
