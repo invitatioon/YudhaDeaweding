@@ -402,6 +402,19 @@ body {
   font-size: 2rem;
 }
 
+.copy-button {
+  border: #6c757d; /* Hapus border */
+  box-shadow: 5px 5px #6c757d;
+  border-radius: 2px; /* Sesuaikan dengan tombol di samping */
+  padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+  font-size: 18px; /* Ukuran font ikon */
+  cursor: pointer; /* Pointer cursor saat hover */
+  margin-left: 15px; /* Geser ikon ke kiri, sesuaikan nilai sesuai kebutuhan */
+}
+
+.copy-icon {
+  font-size: 18px; /* Ukuran font ikon, sesuaikan dengan tombol di samping */
+}
 
 footer {
   padding: 3rem;
