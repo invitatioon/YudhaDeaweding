@@ -51,30 +51,42 @@
 </section>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md bg-transparent sticky-top ">
-  <div class="container">
-    <a class="navbar-brand" href="#" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Yudha & Dea </a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Yudha & Dea</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="#home">Home</a>
-          <a class="nav-link" href="#info">INFO</a>
-          <a class="nav-link" href="#story">STORY</a>
-          <a class="nav-link" href="#gallery">GALLERY</a>
-          <a class="nav-link" href="#rsvp">RSVP</a>
-          <a class="nav-link" href="#gifts">GIFTS</a>
-        </div>
-      </div>
+<!-- Navbar -->
+<div class="bottom-nav">
+  <a href="#home" class="nav-item active">
+    <span class="icon"><i class="bi bi-people-fill"></i></span>
+    <span class="text">Profil</span>
+  </a>
+  <a href="#info" class="nav-item">
+    <span class="icon"><i class="bi bi-house-door-fill ""></i></span>
+    <span class="text">Info</span>
+  </a>
+  <a href="#story" class="nav-item">
+    <span class="icon"><i class="bi bi-clock-history"></i></span>
+    <span class="text">Cerita</span>
+  </a>
+  <a href="#gallery" class="nav-item">
+    <span class="icon"><i class="bi bi-image-fill"></i></span>
+    <span class="text">Gallery</span>
+  </a>
+  <a href="#rsvp" class="nav-item">
+    <span class="icon"><i class="bi bi-chat"></i></span>
+    <span class="text">RSVP</span>
+  </a>
+  <a href="#gifts" class="nav-item">
+    <span class="icon"><i class="bi bi-gift-fill"></i></span>
+    <span class="GIFT">Hadiah</span>
+  </a>
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/song.mp3" type="audio/mp3">
+    </audio>
+    <div class="audio-icon-wrapper" style="display:none;">
+      <i class="bi bi-pause-circle"></i>
     </div>
   </div>
-</nav>
+</div>
+<!-- END Navbar -->
 <!-- END Navbar -->
 
 <!-- Info"-->
@@ -428,17 +440,6 @@
   </footer>
 <!-- END Social/Order" -->
 
-<!-- Song" -->
-  <div id="audio-container">
-    <audio id="song" autoplay loop>
-      <source src="audio/song.mp3" type="audio/mp3">
-    </audio>
-    <div class="audio-icon-wrapper" style="display:none;">
-      <i class="bi bi-pause-circle"></i>
-    </div>
-  </div>
-<!-- END song" -->
-
 <!-- Bootstrap JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -473,18 +474,24 @@
     });
 </script>
 
-<!-- Offcanvas Overflow Control -->
+<!-- Navbar menu -->
 <script>
-    const stickyTop = document.querySelector('.sticky-top');
-    const offcanvas = document.querySelector('.offcanvas');
+  let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+  const navbar = document.querySelector('.bottom-nav'); // Mengambil elemen navigasi
 
-    offcanvas.addEventListener('show.bs.offcanvas', function () {
-        stickyTop.style.overflow = 'visible';
-    });
+  window.addEventListener('scroll', function() {
+    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
-        stickyTop.style.overflow = 'hidden';
-    });
+    if (currentScrollTop > lastScrollTop) {
+      // Jika menggulir ke bawah
+      navbar.style.transform = 'translateY(0)'; // Menampilkan elemen dengan mengatur transform ke 0
+    } else {
+      // Jika menggulir ke atas
+      navbar.style.transform = 'translateY(0)'; // Menggeser elemen ke bawah sehingga tersembunyi
+    }
+
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Menjaga nilai scroll tidak negatif
+  });
 </script>
 
 <!-- Audio Control -->
