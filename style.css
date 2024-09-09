@@ -5,19 +5,14 @@
 }
 
 html, body {
-  overflow-x: hidden; /* Menonaktifkan scroll horizontal */
-  max-width: 100%; /* Pastikan lebar halaman tidak lebih besar dari viewport */
+  overflow-x: hidden;
+  max-width: 100%; 
 }
 
 body {
-  font-size : 1.2rem;
-  font-family : 'Work Sans', sans-serif !important ;
+  font-size : 1.3rem;
+  font-family : "Playwrite NZ", sans-serif;
   min-height : 4000px;
-  outline: 1px solid red;
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 .hero::before {
