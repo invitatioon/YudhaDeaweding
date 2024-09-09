@@ -16,7 +16,7 @@ body {
 }
 
 .hero::before {
-  background-image : url(img/bg.png);
+  background-image : url(img/backgorund\ adat.png);
   content : '';
   position : absolute;
   top : 0;
@@ -31,29 +31,29 @@ body {
 }
 
 .my-box {
-  width: 400px;               /* Lebar box */
-  background-color: #000;  /* Warna latar belakang */
-  border-radius: 10px;        /* Sudut melengkung */
-  padding: 10px;              /* Padding dalam box */
-  margin: 10px auto;          /* Margin otomatis untuk center box */
-  text-align: center;         /* Teks di dalam box rata tengah */
-  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1); /* Efek bayangan */
+  width: 400px;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
   margin-top: 20px;
-  border: 1px solid white; 
+  border: 1px solid white;
   height: 150px;
 }
 
 .my-box h4 {
-  margin-bottom: 10px;        /* Jarak bawah teks */
-  color: #000;             /* Warna teks */
+  margin-bottom: 10px;
+  color: #000;
 }
 
 .my-box .btn {
-  background-color: #f14e95;  /* Warna tombol */
-  color: white;               /* Warna teks pada tombol */
-  padding: 10px 10px;         /* Padding tombol */
-  border-radius: 10px;         /* Sudut tombol melengkung */
-  text-decoration: none;      /* Menghilangkan garis bawah pada link */
+  background-color: #f14e95;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-decoration: none;
 
 }
 
@@ -68,8 +68,8 @@ body {
 }
 
 .hero h1 {
-  font-family : 'Sacramento';
-  font-size : 4.4rem;
+  font-family : "Playwrite NZ", cursive;
+  font-size : 3rem;
 }
 
 .hero h4 { 
@@ -99,7 +99,7 @@ body {
 
 .bottom-nav {
   display: flex;
-  justify-content: space-between; /* Sebarkan tombol secara merata */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   bottom: 0;
@@ -114,13 +114,13 @@ body {
 
 .nav-item {
   text-align: center;
-  flex-grow: 1; /* Membuat setiap item mengambil ruang yang sama */
+  flex-grow: 1;
   text-decoration: none;
   padding: 10px;
 }
 
 .nav-item .icon {
-  font-size: 25px; /* Ukuran icon */
+  font-size: 25px;
   display: block;
   color: #f14e95;
 }
