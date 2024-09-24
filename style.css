@@ -93,6 +93,7 @@
     padding: 10px;
     position: relative;
     border-radius: 5px;
+    z-index:1000;
 }
 
 .bottom-nav {
@@ -102,6 +103,7 @@
   max-width: 567px;
   min-width: 375px;
   height: 60px;
+  z-index:1000;
 }
 
 .nav-item .icon {
