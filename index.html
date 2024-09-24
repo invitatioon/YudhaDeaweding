@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yudha & Dea</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@700&family=Playwrite+CU&display=swap" rel="stylesheet">
+    
+    <!-- simplyCountdown CSS & JS -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css">
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scrol -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- btn copy -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center text-white">
+  <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+      The Wedding of
+  </h1>
+  <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+      Satria Bagus Yudhistira<br>&<br>Fepri Lidya Putri Sinaga
+  </h2>
+  <div class="my-box">
+      <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+      <p><span id="namaSpan"></span></p>
+      <a id="btnUndangan" href="#home" class="btn btn-lg mt-1"><i class="bi bi-envelope-fill"></i> Buka undangan</a>
+  </div>
+</section>
+<!-- End Hero -->
+
+<!-- Navbar -->
+<div id="navbar" class="bottom-nav" style="display: none; position: fixed; bottom: 0; width: 100%; text-align: center;">
+  <a href="#home" class="nav-item active">
+    <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+    <span class="text">INFO</span>
+  </a>
+  <a href="#profil" class="nav-item">
+    <span class="icon"><i class="bi bi-people-fill"></i></span>
+    <span class="text">PROFIL</span>
+  </a>
+  <a href="#info" class="nav-item">
+    <span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
+    <span class="text">LOKASI</span>
+  </a>
+  <a href="#gallery" class="nav-item">
+    <span class="icon"><i class="bi bi-image-fill"></i></span>
+    <span class="text">GALLERY</span>
+  </a>
+  <a href="#rsvp" class="nav-item">
+    <span class="icon"><i class="bi bi-journal-text"></i></span>
+    <span class="text">RSVP</span>
+  </a>
+  <a href="#gifts" class="nav-item">
+    <span class="icon"><i class="bi bi-gift-fill"></i></span>
+    <span class="text">GIFT</span>
+  </a>
+  <a id="audio-control" class="nav-item">
+    <span class="icon"><i class="bi bi-play-circle"></i></span>
+    <span class="text">MUSIC</span>
+  </a>
+  <div id="audio-container" style="display: none;">
+    <audio id="song" loop>
+      <source src="audio/song.mp3" type="audio/mp3">
+    </audio>
+  </div>
+</div>
+<!-- END Navbar -->
+ 
+<!-- HOME-->
+<section id="home" class="home  w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+  <div class="container">
+        <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">The Wedding Of</h1>
+        <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Satria Bagus Yudhistira S.M.<br>&<br>Fepri Lidya Putri Sinaga.S.E.</h2>
+        <h3 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Save The Date <br> Sabtu, 30 November 2024 </h3>
+        <div class="simply-countdown" data-aos="fade-left" data-aos-delay="100" data-aos-duration="3000"></div>
+  </div>
+</section>
+<!-- HOME -->
+
+<!-- Profil -->
+<section id="profil" class="profil">
+  <div class="container">
+    <!-- Bagian Pembuka -->
+    <div class="row justify-content-center">
+      <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Assalamualaikum Wr.Wb.</h1>
+      <div class="col-md-10 text-center">
+        <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+          Dengan memohon Rahmat & Ridho Allah SWT, Kami bermaksud Mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara Pernikahan kami.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bagian Satria Bagus -->
+    <div class="col-lg-10">
+      <div class="row align-items-center">
+        <!-- Kolom Teks -->
+        <div class="col-8 text-center">
+          <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Satria Bagus Yudhistira.SM</h2>
+          <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Putra Kedua Dari</p>
+          <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+            Bpk.Gunawan<br>Dan<br>Ibu.HJ.Nurjana R.Dany.SH
+          </p>
+        </div>
+        <!-- Kolom Gambar -->
+        <div class="col-4 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
+          <img src="img/love1.png" alt="Satria Bagus" class="gambar-1" style="width: 100%; border-radius: 50%;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Fepri Lidya -->
+    <div class="col-lg-10 fepri-lidya">
+      <div class="row align-items-center">
+        <!-- Kolom Gambar -->
+        <div class="col-4 d-flex justify-content-start" data-aos="fade-left" data-aos-delay="100" data-aos-duration="3000">
+          <img src="img/love2.png" alt="Fepri Lidya" class="gambar-2" style="width: 100%; border-radius: 50%;">
+        </div>
+        <!-- Kolom Teks -->
+        <div class="col-8 text-center">
+          <h2 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Fepri Lidya Putri Sinaga.SE</h2>
+          <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Putri Pertama Dari</p>
+          <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+            Bpk.Ramlan Sinaga<br>Dan<br>Ibu.Risna Wati
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Penutup -->
+    <div class="text-center mt-4">
+      <p data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+        Dengan memohon Rahmat & Ridho Allah SWT, Kami bermaksud Mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara Pernikahan kami.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- END Profil -->
+
+<!-- Info -->
+<section id="info" class="info">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <h1>Informasi Acara</h1>
+        <h2 class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</h2>
+      </div>
+      <div class="col-10 text-center">
+        <iframe class="my-google-maps" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.423242014533!2d99.0957929760992!3d2.9799494541670937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30318368fc9324d7%3A0x8800c6580b36a792!2sMasjid%20Al%20Falah!5e0!3m2!1sid!2sid!4v1726815070375!5m2!1sid!2sid" 
+          allowfullscreen="" 
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="https://maps.app.goo.gl/uJXvmBVmebfDmo5JA" target="_blank" class="btn btn-light btn-sm open-map-btn mb-3">
+          <i class="bi bi-geo-alt-fill"></i> Lihat Lokasi
+        </a>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-12">
+        <div class="card text-center text-bg-light mb-5">
+          <div class="card-header">Akad Nikah</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>10.00 - 12.00</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Jumat, 29 November 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="card text-center text-bg-light">
+          <div class="card-header">Resepsi</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>09.00 - selesai</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Sabtu, 30 November 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            Saat acara resepsi diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END info -->
+
+<!-- Gallery -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1>My Gallery</h1>
+      <div class="col-md-8 col-10 text-center mb-4"></div>
+    </div>
+
+    <!-- Video YouTube Responsif -->
+    <div class="col mt-4">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="my-youtube-video" width="560" height="315"
+          src="https://www.youtube.com/embed/_TNwN92mw6E?start=23"
+          title="YouTube video player"
+          style="border: none;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Galeri Gambar -->
+    <div class="row row-cols-md-2 row-cols-sm-2 row-cols-1 mt-4">
+      <div class="col mt-3">
+        <a href="img/gallery/p1.png" data-toggle="lightbox" data-caption="Yudha & Dea1" data-gallery="mygallery">
+          <img src="img/coba.jpg" alt="Yudha & Dea" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/p2.png" data-toggle="lightbox" data-caption="Yudha & Dea2" data-gallery="mygallery">
+          <img src="img/coba.jpg" alt="Yudha & Dea" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/p3.png" data-toggle="lightbox" data-caption="Yudha & Dea3" data-gallery="mygallery">
+          <img src="img/coba.jpg" alt="Yudha & Dea" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/p4.png" data-toggle="lightbox" data-caption="Yudha & Dea4" data-gallery="mygallery">
+          <img src="img/coba.jpg" alt="Yudha & Dea" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END Gallery -->
+
+<!-- rsvp -->
+<section id="rsvp" class="rsvp">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h1>RSVP</h1>
+        <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran dan memberikan Doa serta komentar.</p>
+      </div>
+    </div>
+    <div class="form-wrapper">
+      <form class="row g-3 justify-content-center" method="POST" 
+        action="https://script.google.com/macros/s/AKfycbxmUb_zGYGywzE_u0PRpL54ICFt302VK6xeW6-lHcABYj0E2CVj0oGgV_GuL3lYPIJz/exec"
+        id="my-form">
+        
+        <!-- Nama -->
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+          </div>
+        </div>
+
+        <!-- Jumlah -->
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" value="1" required>
+          </div>
+        </div>
+
+        <!-- Konfirmasi -->
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Konfirmasi</label>
+            <select name="status" id="status" class="form-select" required>
+              <option value="" disabled selected>Pilih salah satu</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Komentar -->
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="komentar" class="form-label">Doa</label>
+            <textarea class="form-control" id="komentar" name="komentar" rows="3" placeholder="Tulis komentar Anda di sini..."></textarea>
+          </div>
+        </div>
+
+        <!-- Tombol Kirim -->
+        <div class="col-12 text-center submit-button">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+
+        <!-- Live Komentar -->
+        <div class="col-12 mt-5">
+          <h2>Live Konfirmasi, Doa dan Komentar </h2>
+          <div id="live-komentar-content" class="live-komentar-box">
+          
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- gifts" -->
+<section id="gifts" class="gifts">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h1>Gifts</h1>
+        <p>Kehadiran serta doa dan restu merupakan hadiah teristimewa. Namun jika ingin mengirimkan sesuatu pada kami, tanpa mengurangi rasa hormat, dapat melalui Rekening Kami di bawah</p>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-md-4">
+        <div class="credit-card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
+          <div class="head" style=" justify-content: space-between; align-items: center">
+            <img src="img/cip.png" class="chips" alt="Cip" style="width: 50px; height: auto;">
+            <div class="bank-name"></div>
+            <img src="img/mandiri.png" alt="Logo Mandiri" style="width: 200px; height: auto;">
+          </div>
+          <div class="number">
+            <div id="mandiri-account">700010501026</div>
+            <button class="copy-button" onclick="copyToClipboard('#mandiri-account')" aria-label="Salin nomor rekening Mandiri">
+              <i class="bi bi-copy"></i>
+            </button>
+          </div>
+          <div class="tail">
+            <div>Fepri Lidya Putri Sinaga</div>             
+          </div>
+        </div>
+        <div class="credit-card1" data-aos="fade-left" data-aos-delay="100" data-aos-duration="3000">
+          <div class="head" style=" justify-content: space-between; align-items: center;">
+            <img src="img/cip.png" class="chips" alt="Cip" style="width: 50px; height: auto;">
+            <div class="bank-name"></div>
+            <img src="img/bca.png" alt="Logo BCA" style="width: 200px; height: auto;">
+          </div>
+          <div class="number">
+            <div id="bca-account">123456789012</div>
+            <button class="copy-button" onclick="copyToClipboard('#bca-account')" aria-label="Salin nomor rekening BCA">
+              <i class="bi bi-copy"></i>
+            </button>
+          </div>
+          <div class="tail">
+            <div>Satria Bagus Yudhistira</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END gifts" -->
+
+<!-- Social/Order -->
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col text-center">
+        <a href="https://instagram.com/raflisinaga_12">
+          <i class="bi bi-instagram"></i> : raflisinaga12
+        </a>
+        <ul class="mt-3 list-unstyled">
+          <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+          <li><a href="https://web.facebook.com/?locale=id_ID&_rdc=1&_rdr"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END Social/Order -->
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+</script>
+
+<!-- Lightbox Script -->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+<!-- btn copy -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
+
+<!-- SCROL ANIMATION-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- SimplyCountdown Initialization -->
+<script>
+    simplyCountdown('.simply-countdown', {
+        year: 2024, // required
+        month: 11, // required
+        day: 30, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+            days: { singular: 'Hari', plural: 'Hari' },
+            hours: { singular: 'Jam', plural: 'Jam' },
+            minutes: { singular: 'Menit', plural: 'Menit' },
+            seconds: { singular: 'Detik', plural: 'Detik' },
+        },
+    });
+</script>
+
+<!--Klick btn-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.getElementById('navbar');
+  const btnUndangan = document.getElementById('btnUndangan');
+  const body = document.body;
+  const audioContainer = document.getElementById('audio-container');
+  const song = document.getElementById('song');
+
+  // Fungsi untuk menonaktifkan scroll
+  function disableScroll() {
+    body.style.overflow = 'hidden';
+  }
+
+  // Fungsi untuk mengaktifkan scroll
+  function enableScroll() {
+    body.style.overflow = 'auto';
+  }
+
+  // Cek jika elemen-elemen ada sebelum memproses
+  if (navbar && btnUndangan && audioContainer && song) {
+    // Cek jika undangan sudah diklik sebelumnya
+    if (localStorage.getItem('undanganClicked') === 'true') {
+      disableScroll(); 
+      navbar.style.display = 'none'; 
+      audioContainer.style.display = 'none'; 
+      
+      // Coba memutar lagu dan tangkap error jika ada
+      song.play().catch(function(error) {
+        console.log('Autoplay prevented: ', error);
+      });
+
+      window.scrollTo({
+        top: document.body.offsetTop,
+        behavior: 'smooth'
+      });
+    } 
+    else {
+      disableScroll(); // Nonaktifkan scroll jika belum diklik
+    }
+
+    // Event ketika tombol undangan diklik
+    btnUndangan.addEventListener('click', function(event) {
+      event.preventDefault();
+      enableScroll(); // Aktifkan scroll setelah klik
+      navbar.style.display = 'flex'; // Tampilkan navbar
+      audioContainer.style.display = 'block'; // Tampilkan audio
+      
+      // Coba memutar lagu dan tangkap error jika ada
+      song.play().catch(function(error) {
+        console.log('Autoplay prevented: ', error);
+      });
+
+      localStorage.setItem('undanganClicked', 'true'); // Simpan status di localStorage
+      
+      window.scrollTo({
+        top: document.querySelector('#home').offsetTop, // Scroll ke elemen "home"
+        behavior: 'smooth'
+      });
+    });
+  } else {
+    console.error('Elemen yang dibutuhkan tidak ditemukan di dalam DOM.');
+  }
+});
+
+</script>
+
+<!--audio control-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const audioContainer = document.getElementById('audio-container');
+  const song = document.getElementById('song');
+  const audioControl = document.getElementById('audio-control');
+  const audioIcon = audioControl.querySelector('.icon i');
+  let isPlaying = false;
+
+  // Fungsi untuk memutar audio
+  function playAudio() {
+    song.volume = 1;
+    song.play().then(() => {
+      isPlaying = true;
+      updateAudioIcon();
+    }).catch(function(error) {
+      console.error('Audio tidak dapat diputar:', error);
+    });
+  }
+
+  // Fungsi untuk menghentikan audio
+  function pauseAudio() {
+    song.pause();
+    isPlaying = false;
+    updateAudioIcon();
+  }
+
+  // Fungsi untuk memperbarui ikon audio
+  function updateAudioIcon() {
+    if (isPlaying) {
+      audioIcon.classList.remove('bi-pause-circle');
+      audioIcon.classList.add('bi-play-circle');
+    } 
+    else {
+      audioIcon.classList.remove('bi-play-circle');
+      audioIcon.classList.add('bi-pause-circle');
+    }
+  }
+
+  // Fungsi untuk toggle audio
+  function toggleAudio() {
+    if (isPlaying) {
+        song.play(); 
+        isPlaying = false; 
+    } else {
+        song.pause(); 
+        isPlaying = true; 
+    }
+    updateAudioIcon();
+  };
+
+  // Toggle audio saat kontrol audio diklik
+  audioControl.addEventListener('click', toggleAudio);
+
+  // Mainkan audio jika undangan sudah diklik sebelumnya
+  if (localStorage.getItem('undanganClicked') === 'true') {
+    pauseAudio();
+  }
+  else {
+
+  }
+});
+
+</script>
+
+<!-- RSVP upload drive -->
+<script>
+    window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = e.target.action;
+            fetch(action, {
+                method: 'POST',
+                body: data,
+            })
+            .then(() => {
+                alert("Konfirmasi kehadiran berhasil terkirim!");
+            });
+        });
+    });
+</script>
+
+<!--live komentar-->
+<script>
+ document.getElementById('my-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Mencegah form dari pengiriman default
+
+    // Ambil nilai dari input
+    const nama = document.getElementById('nama').value;
+    const jumlah = document.getElementById('jumlah').value;
+    const status = document.getElementById('status').value;
+    const komentar = document.getElementById('komentar').value;
+
+    // Buat elemen komentar baru
+    const newComment = document.createElement('div');
+    newComment.classList.add('user-comment'); // Tambahkan kelas CSS untuk styling
+
+    // Isi komentar dengan data yang diambil
+    newComment.innerHTML = `
+      <h4>${nama}</h4>
+      <p><strong>Jumlah:</strong> ${jumlah}</p>
+      <p><strong>Status Kehadiran:</strong> ${status}</p>
+      <p><strong>Komentar:</strong> ${komentar}</p>
+      <hr>
+    `;
+
+    // Tambahkan komentar baru ke div hasil komentar
+    const resultSection = document.getElementById('live-komentar-content');
+    resultSection.appendChild(newComment);
+
+    // Reset kolom komentar tapi biarkan input lainnya
+    document.getElementById('komentar').value = ''; // Kosongkan hanya kolom komentar
+});
+</script>
+
+<!--credit card-->
+<script>
+  function copyToClipboard(selector) {
+    const element = document.querySelector(selector);
+    const range = document.createRange();
+    range.selectNode(element);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    try {
+        document.execCommand('copy');
+        alert('Nomor rekening telah disalin ke clipboard!');
+    } catch (err) {
+        alert('Gagal menyalin nomor rekening.');
+    }
+
+    window.getSelection().removeAllRanges();
+}
+</script>
+
+<!--scrol animation-->
+<script>
+  document.addEventListener('scroll', function (event) {
+    // Kode event listener Anda
+}, { passive: true });
+  AOS.init({
+});
+</script>
+
+<!--Url name-->
+<script>
+  // Mendapatkan parameter 'nama' dari URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('nama');
+
+  // Menampilkan nama di konsol (untuk debugging)
+  console.log(nama);
+
+  // Menampilkan nama di elemen span
+  const namaContainer = document.querySelector('#namaSpan');
+  if (namaContainer && nama) {
+    namaContainer.innerText = nama;
+  }
+</script>
+
+</body>
+</html>
+
