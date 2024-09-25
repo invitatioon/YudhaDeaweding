@@ -22,10 +22,7 @@ Agar lebih menarik, undangan ini dilengkapi dengan animasi yang halus ketika kal
 Undangan ini dirancang dengan tampilan yang minimalis namun tetap elegan. Kami ingin memberikan kesan formal tetapi tetap ramah untuk diakses oleh semua tamu undangan.
 
 Kalian bisa melihat demo undangan kami dengan mengunjungi tautan berikut:
-🔗 Lihat Undangan
+🔗: https://bit.ly/LihatUndangan
 
 Kami berharap kalian menyukai undangan ini dan menantikan kehadiran kalian di hari bahagia kami.
 
-
-View Demo Invitation
-=> https://invitatioon.github.io/YudhaDeaweding/
