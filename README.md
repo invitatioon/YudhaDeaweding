@@ -17,7 +17,7 @@ Untuk mempermudah tamu dalam memberikan konfirmasi kehadiran, kami menyediakan f
 3. Lokasi Acara dengan Google Maps
 Untuk memastikan semua tamu menemukan lokasi acara dengan mudah, kami menyertakan Google Maps yang langsung mengarahkan kalian ke tempat pernikahan.
 
-note. jangan cewek yang megang maps takut nyasar heheheh
+  note. jangan cewek yang megang maps takut nyasar heheheh
 
 4. Animasi yang Elegan
 Agar lebih menarik, undangan ini dilengkapi dengan animasi yang halus ketika kalian melakukan scroll. Setiap bagian undangan akan muncul dengan efek yang elegan, memberikan pengalaman yang menyenangkan saat membaca undangan ini.
