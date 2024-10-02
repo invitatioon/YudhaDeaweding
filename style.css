@@ -218,6 +218,13 @@ transform: translateX(15%);
   text-align: center;
 }
 
+.info h3 {
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .info p{
   font-size: 1rem;
   color: #000;
@@ -226,12 +233,10 @@ transform: translateX(15%);
 }
 
 .my-google-maps {     
-  border: 2px solid #000;     
   border-radius: 10px;  
   margin-top: 50px;
   width: 100%;
   height: 300px;
-  border: none;
   pointer-events: all;
   position: relative;
   z-index: 1;
@@ -276,6 +281,7 @@ transform: translateX(15%);
   background-color: #42567b;
   margin-bottom: 1%;
   height: auto;
+  padding: 1rem;
 }
 
 .gallery h1 {
@@ -284,18 +290,9 @@ transform: translateX(15%);
   font-family: "Playwrite CU", sans-serif;
   font-size: 3rem;
   font-weight: bold;
-  text-align: center;
   margin-top: 20px;
-  grid-column: span 4;
+  grid-column: span 2;
   
-}
-
-.my-youtube-video {
-  border: 3px solid white;
-  border-radius: 10px;
-  width: 100%;    
-  max-width: 560px; 
-  margin-top: 30px;
 }
 
 .gallery img {
@@ -304,18 +301,15 @@ transform: translateX(15%);
 }
 
 .rsvp {
-  background-color: #42567b;
-  content : '';
-  top : 0;
-  left : 0;
-  width : 100%;
-  height :auto;
-  background-size : cover;
-  background-position : center;
-  z-index : -1;
-  align-items : center;
-  border-radius: 2px;
+  position: relative;
+  background-image: url(img/img2.png);
+  background-size: cover;
+  background-position: center;
   margin-bottom: 1%;
+  padding: 1rem ;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
 }
 
 .rsvp h1 {
@@ -328,9 +322,8 @@ transform: translateX(15%);
 }
 
 .rsvp p, .rsvp form label, .rsvp h2 {
-  color: white;
+  color: #000000;
   font-size: 1rem;
-  font-weight: bold;
 }
 
 .rsvp button {
@@ -339,12 +332,8 @@ transform: translateX(15%);
   border: solid 2px white;
 }
 
-.user-comment {
-  padding: 10px;
-  background-color: #000;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+.komentar {
+  background-color: #42567b;
 }
 
 .gifts {
@@ -375,7 +364,6 @@ transform: translateX(15%);
   align-items: center;
   margin-top: 20%;
   font-family: bold;
-  align-items: center;
 }
 
 .credit-card, 
