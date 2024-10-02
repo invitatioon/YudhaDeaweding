@@ -17,15 +17,15 @@ Untuk mempermudah tamu dalam memberikan konfirmasi kehadiran, kami menyediakan f
 3. Lokasi Acara dengan Google Maps
 Untuk memastikan semua tamu menemukan lokasi acara dengan mudah, kami menyertakan Google Maps yang langsung mengarahkan kalian ke tempat pernikahan.
 
-  note. jangan cewek yang megang maps takut nyasar heheheh
+#note. jangan cewek yang megang maps takut nyasar heheheh
 
-4. Animasi yang Elegan
+5. Animasi yang Elegan
 Agar lebih menarik, undangan ini dilengkapi dengan animasi yang halus ketika kalian melakukan scroll. Setiap bagian undangan akan muncul dengan efek yang elegan, memberikan pengalaman yang menyenangkan saat membaca undangan ini.
 
-5. Sentuhan Adat Batak
+6. Sentuhan Adat Batak
 Kami bangga memperkenalkan nuansa Batak dalam desain undangan ini, termasuk dengan menampilkan elemen rumah adat Batak yang melambangkan kekuatan, kebersamaan, dan tradisi dalam keluarga besar kami. Motif dan simbol dari rumah adat ini memperkaya tampilan undangan, memberikan kesan unik dan bermakna bagi kami serta tamu yang hadir.
 
-6. Tampilan Sederhana dan Elegan
+7. Tampilan Sederhana dan Elegan
 Undangan ini dirancang dengan tampilan yang minimalis namun tetap elegan. Kami ingin memberikan kesan formal tetapi tetap ramah untuk diakses oleh semua tamu undangan.
 
 Kalian bisa melihat demo undangan kami dengan mengunjungi tautan berikut: 🔗: https://bit.ly/LihatUndangan
