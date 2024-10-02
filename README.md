@@ -1,4 +1,3 @@
-#image readme.png
 # Contemporary Invitation
 
 
