@@ -242,34 +242,27 @@
 <!-- END info -->
 
 <!-- Gallery -->
-<section id="gallery" class="gallery">
+<section id="gallery" class="gallery-section">
   <div class="container">
-    <div class="row justify-content-center">
-      <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">Gallery</h1>
-      <div class="col-md-8 col-10 text-center mb-4"></div>
+    <div class="gallery-title text-center" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+      Gallery
     </div>
-    <!-- Galeri Gambar -->
-    <div class="row row-cols-md-2 row-cols-sm-2 row-cols-1 mt-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
-      <div class="col mt-3">
-        <a href="img/gallery/p1.png" data-toggle="lightbox" data-caption="Yudha & Dea1" data-gallery="mygallery">
-          <img src="img/depan1.png" alt="Yudha & Dea" class="img-fluid w-100 rounded">
-        </a>
-      </div>
-      <div class="col mt-3">
-        <a href="img/gallery/p2.png" data-toggle="lightbox" data-caption="Yudha & Dea2" data-gallery="mygallery">
-          <img src="img/depan3.png" alt="Yudha & Dea" class="img-fluid w-100 rounded">
-        </a>
-      </div>
-      <div class="col mt-3">
-        <a href="img/gallery/p3.png" data-toggle="lightbox" data-caption="Yudha & Dea3" data-gallery="mygallery">
-          <img src="img/depan4.png" alt="Yudha & Dea" class="img-fluid w-100 rounded">
-        </a>
-      </div>
-      <div class="col mt-3">
-        <a href="img/gallery/p3.png" data-toggle="lightbox" data-caption="Yudha & Dea4" data-gallery="mygallery">
-          <img src="img/depan2.png" alt="Yudha & Dea" class="img-fluid w-100  rounded">
-        </a>
-      </div>
+    <div class="gallery-grid" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
+      <a href="img/belakang/1.png" data-toggle="lightbox" data-caption="Yudha & Dea" data-gallery="mygallery">
+        <img alt="yudha & Dea" src="img/depan/1.png" />
+      </a>
+      <a href="img/belakang/2.png" data-toggle="lightbox" data-caption="Yudha & Dea" data-gallery="mygallery">
+        <img alt="yudha & Dea" src="img/depan/2.png" />
+      </a>
+      <a href="img/belakang/3.png" data-toggle="lightbox" data-caption="Yudha & Dea" data-gallery="mygallery" class="large">
+        <img alt="yudha & Dea" src="img/depan/3.png" />
+      </a>
+      <a href="img/belakang/4.png" data-toggle="lightbox" data-caption="Yudha & Dea" data-gallery="mygallery">
+        <img alt="yudha & Dea" src="img/depan/4.png" />
+      </a>
+      <a href="img/belakang/5.png" data-toggle="lightbox" data-caption="Yudha & Dea" data-gallery="mygallery">
+        <img alt="Yudha & Dea" src="img/depan/5.png" />
+      </a>
     </div>
   </div>
 </section>
@@ -328,33 +321,6 @@
   </div>
 </section>
 <!-- End RSVP Section -->
-
-<!-- Disqus Comment Section -->
-<section id="komentar" class="komentar mt-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <!-- Elemen Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-          var disqus_config = function () {
-              this.page.url = window.location.href;  // Gunakan URL halaman saat ini
-              this.page.identifier = window.location.pathname;  // Gunakan path halaman sebagai identifier unik
-          };
-      
-          (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://the-weding-of.disqus.com/embed.js'; // Ganti shortname Disqus jika perlu
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Disqus Comment Section -->
 
 <!-- gifts" -->
 <section id="gifts" class="gifts">
@@ -651,25 +617,6 @@
   }
 </script>
 
-<!--Disqus-->
-<script>
-  function handleFormSubmit(event) {
-      event.preventDefault(); // Mencegah form dari pengiriman biasa
-
-      const nama = document.getElementById('nama').value;
-      const jumlah = document.getElementById('jumlah').value;
-      const status = document.getElementById('status').value;
-
-      // Tampilkan pesan konfirmasi di halaman
-      document.getElementById('display-nama').innerText = nama;
-      document.getElementById('display-jumlah').innerText = jumlah;
-      document.getElementById('display-status').innerText = status;
-      document.getElementById('confirmation-message').style.display = 'block';
-
-      // Reset form setelah pengiriman
-      document.getElementById('my-form').reset();
-  }
-</script>
 
 </body>
 </html>
