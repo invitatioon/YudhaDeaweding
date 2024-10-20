@@ -16,7 +16,6 @@ Untuk mempermudah tamu dalam memberikan konfirmasi kehadiran, kami menyediakan f
 
 3. Lokasi Acara dengan Google Maps
 Untuk memastikan semua tamu menemukan lokasi acara dengan mudah, kami menyertakan Google Maps yang langsung mengarahkan kalian ke tempat pernikahan.
-
 #note. jangan cewek yang megang maps takut nyasar heheheh
 
 5. Animasi yang Elegan
