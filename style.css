@@ -101,7 +101,7 @@
   align-items: center;
   background-color: white; opacity: 0.7;
   max-width: 567px;
-  min-width: 375px;
+  min-width: 355px;
   height: 60px;
   z-index: 1000;
 }
@@ -219,7 +219,7 @@ transform: translateX(15%);
 }
 
 .info h3 {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #000;
   text-align: center;
   margin-top: 30px;
@@ -277,27 +277,38 @@ transform: translateX(15%);
   font-weight: 500; /* Diperbaiki menjadi nilai yang valid */
 }
 
-.gallery {
+.gallery-section {
   background-color: #42567b;
-  margin-bottom: 1%;
+  padding: 2% 0;
   height: auto;
-  padding: 1rem;
+  margin-bottom: 1%;
+
 }
 
-.gallery h1 {
-  text-align: center;
+.gallery-title {
+  font-size: 2rem;
   color: white;
   font-family: "Playwrite CU", sans-serif;
-  font-size: 3rem;
   font-weight: bold;
-  margin-top: 20px;
-  grid-column: span 2;
-  
+  margin-bottom: 20px;
 }
 
-.gallery img {
-  border: 2px white solid ;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.gallery-grid .large {
+  grid-column: span 2;
 }
 
 .rsvp {
@@ -305,17 +316,17 @@ transform: translateX(15%);
   background-image: url(img/img2.png);
   background-size: cover;
   background-position: center;
-  margin-bottom: 1%;
   padding: 1rem ;
   justify-content: center;
   align-items: center;
   pointer-events: auto;
+  margin-bottom: 1%;
 }
 
 .rsvp h1 {
   color: white;
   font-family: "Playwrite CU", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
@@ -332,8 +343,11 @@ transform: translateX(15%);
   border: solid 2px white;
 }
 
-.komentar {
+#disqus_thread {
   background-color: #42567b;
+  padding: 20px; 
+  color: white;
+  margin-bottom: 1%;
 }
 
 .gifts {
@@ -702,17 +716,16 @@ footer li {
   }
 
   .nav-item .icon {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .nav-item .text {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .bottom-nav {
-    min-width: 345px;
-
-    
+    min-width: 305px;
+ 
   }
 
   .home h1 {
